@@ -22,6 +22,7 @@ RUN make
 CMD ["echo", "finished"]
 
 COPY ./entrypoint.sh /
+RUN chmod u+x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 VOLUME /dev
