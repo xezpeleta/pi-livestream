@@ -1,12 +1,13 @@
 FROM resin/rpi-raspbian:latest
 
-RUN apt-get update && \
-    apt-get -qy install libjpeg8-dev \
+RUN apt-get update && apt-get -qy install \
+      libjpeg8-dev \
       imagemagick \
       libv4l-dev \
       curl \
       build-essential \
-      cmake
+      cmake \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root/
 
