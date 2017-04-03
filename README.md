@@ -1,5 +1,5 @@
 # pi-livestream
-Docker template to do live streaming on the RPi using mjpg-streamer
+Docker template to do live streaming on the RPi using mjpg-streamer: https://hub.docker.com/r/xezpeleta/pilivestream/
 
 ## Usage
 
