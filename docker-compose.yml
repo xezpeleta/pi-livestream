@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+  pilivestream:
+    #image: xezpeleta/pilivestream
+    build: .
+    privileged: true
+    cap_add:
+      - ALL
+    volumes:
+      - /dev:/dev
+      - /lib/modules:/lib/modules
+    ports:
+      - 80:80
